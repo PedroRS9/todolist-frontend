@@ -1,0 +1,40 @@
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+.brand {
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+.links-desktop {
+  display: none;
+  align-items: center;
+  gap: .25rem;
+}
+
+.menu-button {
+  display: inline-flex;
+}
+
+.active-link {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  .links-desktop { display: flex; }
+  .menu-button { display: none; }
+}
